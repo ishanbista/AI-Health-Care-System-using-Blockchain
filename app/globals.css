@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base colors */
+  --background: 210 40% 99%;
+  --foreground: 222 47% 11.2%;
+
+  /* Card colors */
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11.2%;
+
+  /* Popover colors */
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11.2%;
+
+  /* Primary colors - Medical Blue */
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary colors - Healing Green */
+  --secondary: 174 84% 36%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Muted colors */
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215 16% 47%;
+
+  /* Accent colors - Soft Teal */
+  --accent: 187 65% 86%;
+  --accent-foreground: 199 89% 28%;
+
+  /* Destructive colors - Medical Alert Red */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  /* Border and input colors */
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 199 89% 48%;
+
+  /* Success colors - Healing Green */
+  --success: 142 76% 36%;
+  --success-foreground: 0 0% 100%;
+
+  /* Warning colors - Attention Yellow */
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 100%;
+
+  /* Info colors - Soft Blue */
+  --info: 199 89% 48%;
+  --info-foreground: 0 0% 100%;
+
+  /* Radius */
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Base colors */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  /* Card colors */
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+
+  /* Popover colors */
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+
+  /* Primary colors - Medical Blue */
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary colors - Healing Green */
+  --secondary: 174 84% 36%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Muted colors */
+  --muted: 217 33% 17.5%;
+  --muted-foreground: 215 20% 65%;
+
+  /* Accent colors - Soft Teal */
+  --accent: 187 65% 26%;
+  --accent-foreground: 210 40% 98%;
+
+  /* Destructive colors - Medical Alert Red */
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  /* Border and input colors */
+  --border: 217 33% 17.5%;
+  --input: 217 33% 17.5%;
+  --ring: 199 89% 48%;
+
+  /* Success colors - Healing Green */
+  --success: 142 76% 36%;
+  --success-foreground: 0 0% 100%;
+
+  /* Warning colors - Attention Yellow */
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 100%;
+
+  /* Info colors - Soft Blue */
+  --info: 199 89% 48%;
+  --info-foreground: 0 0% 100%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Font settings */
+  :root {
+    --font-sans: var(--font-poppins), var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    --font-heading: var(--font-montserrat), var(--font-sans);
+    --font-serif: var(--font-lora), Georgia, 'Times New Roman', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.7);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
