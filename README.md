@@ -45,13 +45,13 @@ A modern healthcare platform that connects patients with the right doctors using
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/telehealth.git
-cd telehealth
+git clone https://github.com/ishanbista/AIHealthCare.git
+cd AIHealthCare
 ```
 
 2. Install dependencies
 ```bash
-pnpm install
+npm install
 ```
 
 3. Create a `.env` file in the root directory with necessary environment variables:
@@ -62,7 +62,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 4. Run the development server
 ```bash
-pnpm dev
+npm run dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
@@ -86,7 +86,6 @@ pnpm dev
 - Blockchain-based data storage
 - End-to-end encrypted communications
 - Secure medical record access
-- HIPAA-compliant data handling
 
 ## 🎨 UI/UX Features
 
