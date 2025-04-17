@@ -114,4 +114,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name -Ishan Bista
 
-Project Link: []
+Project Link: [https://github.com/ishanbista/AI-Health-Care-System-using-Blockchain]
