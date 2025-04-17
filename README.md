@@ -33,7 +33,8 @@ A modern healthcare platform that connects patients with the right doctors using
   - Recharts for data visualization
 
 ## 🚀 Demo Video
-![AI Healthcare demo](demo.gif)
+Project Video Google Drive Link: <br>
+https://drive.google.com/file/d/18GJ873w927LNP-8byYFk15HZwPYmnI0P/view?usp=sharing
 ## 🚀 Getting Started
 
 ### Prerequisites
