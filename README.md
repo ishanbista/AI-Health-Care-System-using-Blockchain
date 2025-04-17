@@ -32,7 +32,8 @@ A modern healthcare platform that connects patients with the right doctors using
   - Framer Motion animations
   - Recharts for data visualization
 
-## Demo Video
+## 🚀 Demo Video
+![AI Healthcare demo](demo.gif)
 ## 🚀 Getting Started
 
 ### Prerequisites
